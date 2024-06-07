@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Celular */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+.footer-buttons {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+
+}
+
+
+@media screen and (min-width: 1201px) {
+
+}

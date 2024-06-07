@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S-MAR</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media_query_index.css">
+</head>
+<body>
+    <header>
+        <h1>S.O.S-<span>MAR</span></h1>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícone do menu hambúrguer -->
+        </div>
+        <nav id="menu">
+            <a href="relatar.html">
+                <button class="red-button">Relatar</button>
+            </a>
+            <a href="consultar.html">
+                <button>Consultar</button>
+            </a>
+            <a href="login_cadastro.html">
+                <button>Login/Cadastro</button>
+            </a>
+        </nav>
+    </header> 
+    <main>
+        <section class="intro">
+            <h2>S.O.S-<span class="highlight">MAR</span></h2>
+            <img src="image/image 33.jpg" alt="Logo"><br>
+            <a href="integrantes.html">
+            <button>Integrantes</button></a>
+        </section>
+        <section class="content">
+            <article>
+                <h3>O que é a S.O.S-<span class="highlight">MAR</span>?</h3>
+                <p>A S.O.S-<span class="highlight">MAR</span> é uma iniciativa criada para preservação dos mares, ambientes costeiros, e vidas maritimas. Aqui você poderá relatar incidentes ou irregularidades como vazamentos de óleo, condições de má preservação, crimes ambientais, pescas ilegais, denunciar o descarte incorreto de resíduos, entre outras condições ou práticas inadequadas que prejudicam o meio ambiente marinho.</p>
+            </article>
+            <article>
+                <h3>Qual é o nosso Objetivo?</h3>
+                <p>Nosso objetivo é que esses relatos sejam avaliados pelas autoridades responsáveis para tomarem as providenciais necessárias afim de normalizar determinada situação relatada. Seja agindo com programas de concientização para a população em locais com má conservação, como para atuar judialcialmente com aqueles que fazem as irregularidades propositalmente.</p>
+                <div class="images">
+                    <img src="image/image 34.png" alt="Imagem 1">
+                    <img src="image/image 35.png" alt="Imagem 2">
+                    <img src="image/image 36.png" alt="Imagem 3">
+                </div>
+            </article>
+            <article>
+                <h3>Por que se cadastrar?</h3>
+                <p>O cadastro é necessário para evitar falsos relatos ou mau intencionados. Por isso solicitamos os dados pessoais do usuário que está fazendo o relato, também pedimos fotos ou videos para evidenciar os relatos, e a localização que pode ser consultada através do mapa na hora do preenchimento do realato, desta forma podemos gerar um relatório mais acertivo e confiável.</p>
+                <a href="login_cadastro.html">
+                <button>Login/Cadastro</button></a>
+            </article>
+            <article>
+                <h3>Posso Relatar sem me cadastrar?</h3>
+                <p>Sim, você ainda terá duas formas de fazer isso, tanto diretamente no botão “Reletar”, quanto através do Chatbot, porém será necessário as mesmas informações solicitadas no cadastro, como os dados pessoas, fotos e/ou vídeos dos relatos, e localização. A desvantagem é que se você precisar fazer outro relato, terá que fazer todo o preenchimento do formulário novamente, e uma vez que realizou o cadastro e fez o login, os dados pessoais são preenchidos automaticamente.</p>
+                <a href="relatar.html">
+                    <button class="red-button">Relatar</button>
+                </a>
+            </article>
+        </section>
+        <section class="cta">
+            <p>Faça sua parte e nos ajude a manter a conservação das nossas praias, oceanos e vidas marítimas!</p>
+            <img src="image/image 37.png" alt="CTA Image">
+        </section>
+    </main>
+    <div class="footer-buttons">
+        <a href="relatar.html">
+        <button class="red-button">Relatar</button></a>
+        <a href="consultar.html">
+        <button>Consultar</button></a>
+        <a href="login_cadastro.html">
+        <button>Login/Cadastro</button></a>
+    </div>
+    <footer>
+        <p>© 2024 SOS-MAR Inc. All rights reserved.</p>
+    </footer>
+    <script src="../scrip/index.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "c7baf8f5-06dd-47e2-9dd7-3cce87c9642c", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "43617f4c-3a00-4ce0-9a22-2582629d5218", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

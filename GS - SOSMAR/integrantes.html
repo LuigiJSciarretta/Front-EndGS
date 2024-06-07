@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.SMAR - Integrantes</title>
+    <link rel="stylesheet" href="css/integrantes_styles.css">
+    <link rel="stylesheet" href="css/media_query_integrantes.css">
+</head>
+<body>
+    <header>
+        <h1>S.O.S<span class="highlight">MAR</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-button">Home</a></li>
+                <li><a href="relatar.html" class="relatar-button">Relatar</a></li>
+                <li><a href="consultar.html" class="consultar-button">Consultar</a></li>
+                <li><a href="login_cadastro.html" class="login-button">Login/Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>S.O.S-<span class="highlight">MAR</span></h2>
+            <img src="../image/image 33.jpg" alt="Logo"><br>
+        </section>
+        <section class="integrantes-section">
+            <h2>TURMA - 1TDSPK</h2>
+            <h3>INTEGRANTES DO GRUPO - “DUPLA DINÂMICA”</h3>
+            <div class="integrantes">
+                <div class="integrante">
+                    <img src="../image/anderson.png" alt="Anderson Pedro">
+                    <p><strong>Anderson Pedro</strong></p>
+                    <p>RM - 557002</p>
+                </div>
+                <div class="integrante">
+                    <img src="../image/luigi.png" alt="Luigi Sciaretta">
+                    <p><strong>Luigi Sciaretta</strong></p>
+                    <p>RM - 555877</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer-buttons">
+        <a href="index.html">
+        <button class="blue-button">Home</button></a>
+        <a href="relatar.html">
+        <button class="red-button">Relatar</button></a>
+        <a href="consultar.html">
+        <button>Consultar</button></a>
+        <a href="login_cadastro.html">
+        <button>Login/Cadastro</button></a>
+    </div>
+    <footer>
+        <p>&copy; 2024 SOS-MAR, Inc. All rights reserved.</p>
+    </footer>
+    <script src="../scrip/index.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "c7baf8f5-06dd-47e2-9dd7-3cce87c9642c", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "43617f4c-3a00-4ce0-9a22-2582629d5218", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

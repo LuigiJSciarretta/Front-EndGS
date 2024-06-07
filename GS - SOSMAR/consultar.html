@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.SMAR - Consultar Relatos</title>
+    <link rel="stylesheet" href="css/consultar_styles.css">
+    <link rel="stylesheet" href="css/media_query_consultar.css">
+</head>
+<body>
+    <header>
+        <h1>S.O.S<span class="highlight">MAR</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-button">Home</a></li>
+                <li><a href="relatar.html" class="default-button">Relatar</a></li>
+                <li><a href="login_cadastro.html" class="default-button1">Login/Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>S.O.S-<span class="highlight">MAR</span></h2>
+            <img src="../image/image 33.jpg" alt="Logo"><br>
+            <a href="integrantes.html">
+            <button>Integrantes</button></a>
+        </section>
+        <section class="report-section">
+            <h2>Consulte aqui o Status dos seus <span class="highlight">Relatos!</span></h2>
+            <div class="personal-data">
+                <form action="#" method="POST">
+                    <label for="cpf">Insira seu CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx"><br>
+                    
+                    <label for="dob">Data de Nascimento:</label>
+                    <input type="text" id="dob" name="dob" placeholder="dd/mm/aa"><br>
+                    
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+                
+                <div class="report-status">
+                    <h3>Incidente: SP000ABC2024</h3>
+                    <p>Status: <span class="status">Em Analise</span></p>
+                    
+                    <h3>Dados do Relato</h3>
+                    <p>Acumulo de Residuos</p>
+                    <p>Data: 99/99/99</p>
+                    <p>Horário: 24h00</p>
+                    <p>Localização: Maresias, São Sebastião - SP</p>
+                    <p>Descrição: Foi encontrado uma grande concentração de lixo na praia na localização informada com as coordenadas abaixo. Foi inserido fotos e um vídeo para evidenciar o ocorrido.</p>
+                    <p>Anexos: <a href="#">foto1.jpg</a> <a href="#">foto2.jpg</a> <a href="#">video.mp4</a></p>
+                    
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.791704207034!2d-45.5677063335735!3d-23.791232733662742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc6ff5888d1f23%3A0x7710b5db60b9d6d5!2sPraia%20de%20Maresias!5e0!3m2!1spt-BR!2sbr!4v1686175772834!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <p>Localização com latitude e longitude:<br>-23.791232733662742, -45.5677063335735</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer-buttons">
+        <a href="index.html">
+        <button class="blue-button">Home</button></a>
+        <a href="relatar.html">
+        <button class="red-button">Relatar</button></a>
+        <a href="login_cadastro.html">
+        <button>Login/Cadastro</button></a>
+    </div>
+    <footer>
+        <p>&copy; 2024 SOS-MAR, Inc. All rights reserved.</p>
+    </footer>
+    <script src="../scrip/index.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "c7baf8f5-06dd-47e2-9dd7-3cce87c9642c", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "43617f4c-3a00-4ce0-9a22-2582629d5218", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

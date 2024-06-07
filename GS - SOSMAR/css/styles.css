@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #333;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header h1 span {
+    color: #00ADEF;
+}
+
+.highlight {
+    color: #00ADEF;
+}
+
+nav button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav .red-button {
+    background-color: #F00;
+    color: #000;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro img {
+    width: 200px;
+    height: auto;
+}
+
+.intro button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 span {
+    color: #00ADEF;
+}
+
+.content .images {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+.content .images img {
+    width: 30%;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.cta {
+    text-align: center;
+    font-size: 40px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-buttons button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-buttons .red-button {
+    background-color: #F00;
+    color: #000;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos adicionais para o menu hamburguer */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
